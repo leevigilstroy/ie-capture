@@ -1,0 +1,27 @@
+<%= simple_form_for @income do |f| %>  
+    <%= f.input :first_name, label: 'First Name' %> 
+    <%= f.input :last_name, label: 'Last Name' %> 
+    <%= f.input :date_of_birth, label: 'Date of Birth', hint: 'dd/mm/yyyy' %> 
+
+<p>Income: Salary or Wages</p>
+<%= f.input  :income1, label: 'Take home salary or Wage' %>
+<%= f.input  :income2, label: 'Partner\'s salary or wage' %>
+<%= f.input  :income3, label: 'Other income from salary or wages' %>
+
+<p>Other Income</p>
+<%= f.input  :income4, label: 'Maintanence or child support' %>
+<%= f.input  :income5, label: 'Boarders or lodgers' %>
+<%= f.input  :income6, label: 'Non-dependent contributions' %>
+<%= f.input  :income7, label: 'Student loands or grants' %>
+<%= f.input  :income7, label: 'Other' %>
+
+<p>Benefits </p>
+<%= f.input  :income8, label: 'Sample input' %>
+<%= f.input  :income9, label: 'Sample input' %>
+<%= f.input  :income10, label: 'More sample inputs' %>
+
+<%= f.button :submit, labe:'Save and Proceed' %>
+<h3>You will have a chance to review your form before you submit it.  Once you click Save, you can come back and complete the rest of the form at a later date</h3>
+
+<% end %>
+
