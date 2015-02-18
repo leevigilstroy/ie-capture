@@ -5,7 +5,7 @@ class CreateIncomes < ActiveRecord::Migration
       t.timestamps
       t.string :first_name
       t.string :last_name
-      t.string :date_of_birth 
+      t.date :date_of_birth 
       t.float  :income1
       t.float  :income2
       t.float  :income3
