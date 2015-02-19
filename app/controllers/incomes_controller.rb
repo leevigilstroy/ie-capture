@@ -11,7 +11,7 @@ class IncomesController < ApplicationController
   def create
     @income = Income.new(income_params)
     if @income.save
-      redirect_to(:action => 'index')
+      redirect_to(:action => 'show', :id => @income.id)
     end
   end
   
@@ -23,6 +23,6 @@ class IncomesController < ApplicationController
   private
   
   def income_params
-    params.require(:income).permit(:first_name, :last_name)
+    params.require(:income).permit(:first_name, :last_name, :date_of_birth, :income1, :income2, :income3, :income4, :income5, :income6, :income7, :income8, :income9, :income10)
   end
 end
