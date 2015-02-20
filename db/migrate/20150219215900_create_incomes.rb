@@ -1,8 +1,6 @@
 class CreateIncomes < ActiveRecord::Migration
   def change
-    create_table :incomes do |t|
-
-
+     create_table :incomes do |t|
       t.string :first_name
       t.string :last_name
       t.date :date_of_birth 
@@ -16,7 +14,7 @@ class CreateIncomes < ActiveRecord::Migration
       t.float  :income8
       t.float  :income9
       t.float  :income10
-      
       t.timestamps null: false
+     end
   end
 end

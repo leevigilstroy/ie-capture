@@ -1,6 +1,6 @@
 <p>
   <strong>First name:</strong>
-  <%= @income value %>
+  <%= @income.first_name %>
 </p>
 
 <p>
@@ -9,12 +9,190 @@
 </p>
 
 <p>
-  <strong>Date of Birth:</strong>  
-  <%= @income.date_of_birth %>
-</p>
+<strong>Your monthly salary or wage, after tax:</strong>
+  <%= @income.clients_salary_wages %></p>
+<p><strong>Your partner’s salary or wage, after tax:</strong>
+  <%= @income.partners_salary_wages %></p>
+<p><strong>Other income:</strong>
+  <%= @income.other_income %></p>
+<p><strong>Maintenance or child support:</strong>
+  <%= @income.maintenance_childsupport %></p>
+<p><strong>Boarders or Lodgers:</strong>
+  <%= @income.boarders_lodgers %></p>
+<p><strong>Non dependant contributions:</strong>
+  <%= @income.non_dependant_contributions %></p>
+<p><strong>Student loans and grants:</strong>
+  <%= @income.student_loans_grants %></p>
+<p><strong>Other Income:</strong>
+  <%= @income.other_other_income %></p>
+<p><strong>Jobseeker’s Allowance (Income-based):</strong>
+  <%= @income.jobseekers_allowance_income %></p>
+<p><strong>Jobseeker’s Allowance (Contribution-based):</strong>
+  <%= @income.jobseekers_allowance_contribution %></p>
+<p><strong>Income Support:</strong>
+  <%= @income.income_support %></p>
+<p><strong>Working Tax Credit:</strong>
+  <%= @income.working_tax_credit %></p>
+<p><strong>Child Tax Credit:</strong>
+  <%= @income.child_tax_credit %></p>
+<p><strong>Child Benefit:</strong>
+  <%= @income.child_benefit %></p>
+<p><strong>Employment & Support Allowance / Statutory Sick Pay:</strong>
+  <%= @income.employment_support_allowance_statutory_sickpay %></p>
+<p><strong>DLA, PIP or Attendance Allowance:</strong>
+  <%= @income.dla_pip_attendance_allowance %></p>
+<p><strong>Carer’s Allowance:</strong>
+  <%= @income.carers_allowance %></p>
+<p><strong>Housing Benefit / Local Housing Allowance:</strong>
+  <%= @income.housing_benefit_local_housing_allowance %></p>
+<p><strong>Council Tax Reduction:</strong>
+  <%= @income.council_tax_reduction %></p>
+<p><strong>Other (including Universal Credit):</strong>
+  <%= @income.other_including_universal_credit %></p>
+<p><strong>Other benefits:</strong>
+  <%= @income.other_benefits %></p>
+<p><strong>State pension(s):</strong>
+  <%= @income.state_pensions %></p>
+<p><strong>Private or work pension(s):</strong>
+  <%= @income.private_workpensions %></p>
+<p><strong>Pension Credit:</strong>
+  <%= @income.pension_credit %></p>
+<p><strong>Other:</strong>
+  <%= @income.other_pension %></p>
+<p><strong>Monthly Total Income:</strong>
+  <%= @income.total_value_propertyies %></p>
+<p><strong>Mortgage outstanding:</strong>
+  <%= @income.mortgage_outstanding %></p>
+<p><strong>Secured loan(s) outstanding:</strong>
+  <%= @income.secured_loans_outstanding %></p>
+<p><strong>Value of vehicle(s) (less HP outstanding):</strong>
+  <%= @income.value_vehicles_less_hpoutstanding %></p>
+<p><strong>Savings:</strong>
+  <%= @income.savings %></p>
+<p><strong>Other assets:</strong>
+  <%= @income.otherassets %></p>
+<p><strong>Rent:</strong>
+  <%= @income.rent %></p>
+<p><strong>Ground rent, service charges, factor fees :</strong>
+  <%= @income.ground_rent_service_charges_factor_fees %></p>
+<p><strong>Mortgage:</strong>
+  <%= @income.mortgage %></p>
+<p><strong>Other secured loans :</strong>
+  <%= @income.other_secured_loans %></p>
+<p><strong>Mortgage Endowment / Mortgage PPI:</strong>
+  <%= @income.mortgage_endowment_mortgage_ppi %></p>
+<p><strong>Building and contents insurance:</strong>
+  <%= @income.building_and_contents_insurance %></p>
+<p><strong>Pension and life insurance:</strong>
+  <%= @income.pension_and_life_insurance %></p>
+<p><strong>Council Tax (Rates in NI):</strong>
+  <%= @income.council_tax_rates_in_ni %></p>
+<p><strong>Gas:</strong>
+  <%= @income.gas %></p>
+<p><strong>Electricity:</strong>
+  <%= @income.electricity %></p>
+<p><strong>Water (N/A in Scotland or NI):</strong>
+  <%= @income.water_na_in_scotland_or_ni %></p>
+<p><strong>Other utilities (coal, oil, calor gas):</strong>
+  <%= @income.other_utilities_coal_oil_calor_gas %></p>
+<p><strong>TV licence:</strong>
+  <%= @income.tv_licence %></p>
+<p><strong>Magistrates’ or sheriff court fines:</strong>
+  <%= @income.magistrates_or_sheriff_court_fines %></p>
+<p><strong>Maintenance or child support:</strong>
+  <%= @income.maintenance_or_child_support %></p>
+<p><strong>Hire Purchase / Conditional Sale:</strong>
+  <%= @income.hire_purchase_conditional_sale %></p>
+<p><strong>Childcare costs:</strong>
+  <%= @income.childcare_costs %></p>
+<p><strong>Adult care costs:</strong>
+  <%= @income.adult_care_costs %></p>
+<p><strong>Other:</strong>
+  <%= @income.other_essential1 %></p>
+<p><strong>Other:</strong>
+  <%= @income.other_essenttial2 %></p>
+<p><strong>Other:</strong>
+  <%= @income.other_essential3 %></p>
+<p><strong>Home phone:</strong>
+  <%= @income.home_phone %></p>
+<p><strong>Mobile phone:</strong>
+  <%= @income.mobile_phone %></p>
+<p><strong>Other phone:</strong>
+  <%= @income.other_phone %></p>
+<p><strong>Monthly Total Phone:</strong>
+  <%= @income.monthly_total_phone %></p>
+<p><strong>Public transport (work, school, shopping etc):</strong>
+  <%= @income.public_transport_work_school_shopping_etc %></p>
+<p><strong>Other (e.g. taxis):</strong>
+  <%= @income.other_transport %></p>
+<p><strong>Car insurance:</strong>
+  <%= @income.car_insurance %></p>
+<p><strong>Vehicle Tax:</strong>
+  <%= @income.vehicle_tax %></p>
+<p><strong>Fuel (Petrol, Diesel, Oil etc):</strong>
+  <%= @income.fuel_petrol_diesel_oil_etc %></p>
+<p><strong>MOT and car maintenance:</strong>
+  <%= @income.mot_and_car_maintenance %></p>
+<p><strong>Breakdown or recovery:</strong>
+  <%= @income.breakdown_or_recovery %></p>
+<p><strong>Parking charges or tolls:</strong>
+  <%= @income.parking_charges_or_tolls %></p>
+<p><strong>Other car costs:</strong>
+  <%= @income.other_car_costs %></p>
+<p><strong>:</strong>
+  <%= @income.monthly_total_travel %></p>
+<p><strong>Food and milk:</strong>
+  <%= @income.food_and_milk %></p>
+<p><strong>Cleaning and toiletries:</strong>
+  <%= @income.cleaning_and_toiletries %></p>
+<p><strong>Newspapers and magazines:</strong>
+  <%= @income.newspapers_and_magazines %></p>
+<p><strong>Cigarettes, tobacco & sweets:</strong>
+  <%= @income.cigarettes_tobacco_sweets %></p>
+<p><strong>Alcohol:</strong>
+  <%= @income.alcohol %></p>
+<p><strong>Laundry and dry cleaning:</strong>
+  <%= @income.laundry_and_dry_cleaning %></p>
+<p><strong>Clothing and footwear:</strong>
+  <%= @income.clothing_and_footwear %></p>
+<p><strong>Nappies and baby items:</strong>
+  <%= @income.nappies_and_baby_items %></p>
+<p><strong>Pet food:</strong>
+  <%= @income.pet_food %></p>
+<p><strong>Other housekeeping:</strong>
+  <%= @income.other_housekeeping %></p>
+<p><strong>:</strong>
+  <%= @income.monthly_total_housekeeping %></p>
+<p><strong>Health (dentist, glasses, prescriptions, health ins):</strong>
+  <%= @income.health_dentist_glasses_prescriptions_health_ins %></p>
+<p><strong>Repairs / house maint (incl window cleaning, maint contracts):</strong>
+  <%= @income.repairs_house_maint_incl_window_cleaning_maint_contracts %></p>
+<p><strong>Hairdressing / haircuts:</strong>
+  <%= @income.hairdressing_haircuts %></p>
+<p><strong>Cable, Satellite and Internet :</strong>
+  <%= @income.cable_satellite_and_internet %></p>
+<p><strong>TV, video and other appliance rental:</strong>
+  <%= @income.tv_video_and_other_appliance_rental %></p>
+<p><strong>School meals and meals at work:</strong>
+  <%= @income.school_meals_and_meals_at_work %></p>
+<p><strong>Pocket money and school trips:</strong>
+  <%= @income.pocket_money_and_school_trips %></p>
+<p><strong>Lottery and pools etc:</strong>
+  <%= @income.lottery_and_pools_etc %></p>
+<p><strong>Hobbies / leisure / sport  (incl pub/outings, gym etc):</strong>
+  <%= @income.hobbies_leisure_sport_incl_puboutings_gym_etc %></p>
+<p><strong>Gifts (Christmas, birthdays, charity etc):</strong>
+  <%= @income.gifts_christmas_birthdays_charity_etc %></p>
+<p><strong>Vet bills and pet insurance:</strong>
+  <%= @income.vet_bills_and_pet_insurance %></p>
+<p><strong>Other (e.g. postage):</strong>
+  <%= @income.other_expenditure1 %></p>
+<p><strong>Other (e.g. holidays):</strong>
+  <%= @income.other_expenditure2 %></p>
 
-<p>
-  <strong>Take home salary or Wage:</strong>  
-  <%= @income.income1 %>
+
+
+
+
 </p>
 
