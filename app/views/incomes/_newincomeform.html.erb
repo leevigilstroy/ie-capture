@@ -1,5 +1,7 @@
 <%= simple_form_for @income do |f| %>  
-    <%= f.input :first_name %> 
+
+
+<%= f.input :first_name %> 
     <%= f.input :last_name, label: 'Last Name' %> 
 
 <p>
@@ -126,6 +128,7 @@
     <%= f.input :other_expenditure1, label: 'Other (e.g. postage)' %>
     <%= f.input :other_expenditure2, label: 'Other (e.g. holidays)' %>
 </p>
+
 <%= f.button :submit, "Save and Proceed" %>
 <% end %>
 <h3>You will have a chance to review your form before you submit it.  Once you click Save, you can come back and complete the rest of the form at a later date</h3>

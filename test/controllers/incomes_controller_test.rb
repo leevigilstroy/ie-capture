@@ -39,11 +39,5 @@ class IncomesControllerTest < ActionController::TestCase
     assert_redirected_to income_path(assigns(:income))
   end
 
-  test "should destroy income" do
-    assert_difference('Income.count', -1) do
-      delete :destroy, id: @income
-    end
-
-    assert_redirected_to incomes_path
-  end
+  
 end

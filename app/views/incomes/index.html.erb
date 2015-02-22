@@ -15,6 +15,9 @@
       <tr>
         <td><%=income.first_name%></td>
         <td><%=income.last_name %></td>
+        <td><%= link_to 'Show', income_path(income) %></td>
+        <td><%= link_to 'Edit', edit_income_path(income) %></td>
+        <td><%= link_to 'Delete', income_path(income), method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

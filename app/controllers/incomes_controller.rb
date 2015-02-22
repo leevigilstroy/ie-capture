@@ -4,6 +4,10 @@ class IncomesController < ApplicationController
     @incomes = Income.all
   end
   
+    def show
+    @income = Income.find(params[:id])
+  end
+  
   def new
     @income = Income.new
   end
@@ -14,12 +18,25 @@ class IncomesController < ApplicationController
       redirect_to(:action => 'show', :id => @income.id)
     end
   end
-  
-  def show
+
+  def edit
     @income = Income.find(params[:id])
   end
   
- 
+  def update
+    @income = Income.find(params[:id])
+    if @income.update_attributes(income_params)
+      redirect_to(:action => 'show', :id => @income.id)
+     else
+      render 'edit'
+    end
+  end
+  
+  def destroy
+    @income = Income.find(params[:id])
+    @income.destroy
+    redirect_to(:action => 'index')
+  end
   private
   
   def income_params

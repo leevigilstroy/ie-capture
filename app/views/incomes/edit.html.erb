@@ -1,6 +1,6 @@
-<h1>Editing Income</h1>
+<% provide(:title, "Edit Your Data") %>
+<h3>Here is the saved data, for <%=@income.first_name%> <%=@income.last_name%>.  Remember to click save to store your progress.</h3>
 
-<%= render 'form' %>
+<%= render 'editincomeform' %>
 
-<%= link_to 'Show', @income %> |
-<%= link_to 'Back', incomes_path %>
+<%= link_to 'Back', :back %>
