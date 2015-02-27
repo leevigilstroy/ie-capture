@@ -1,26 +1,29 @@
 <%= simple_form_for @income do |f| %>  
 
-
+<p>
 <%= f.input :first_name %> 
     <%= f.input :last_name, label: 'Last Name' %> 
+</p>
 
-<p>
   <H1>Income</H1>
   <H2>Salary or Wages</h2>
+  <p>
     <%= f.input :clients_salary_wages, label: 'Monthly salary or wage, after tax' %>
     <%= f.input :partners_salary_wages, label: 'Partner\'s salary or wage, after tax' %>
     <%= f.input :other_income, label: 'Other income' %>
 </p>
-<p>
+
   <H2>Other Income</H2>
+<p>
     <%= f.input :maintenance_childsupport, label: 'Maintenance or child support' %>
     <%= f.input :boarders_lodgers, label: 'Boarders or Lodgers' %>
     <%= f.input :non_dependant_contributions, label: 'Non dependant contributions' %>
     <%= f.input :student_loans_grants, label: 'Student loans and grants' %>
     <%= f.input :other_other_income, label: 'Other Income' %>
   </p>
-<p>
+
   <H2>Benefits</H2> 
+<p>
     <%= f.input :jobseekers_allowance_income, label: 'Jobseeker\'s Allowance (Income-based)' %>
     <%= f.input :jobseekers_allowance_contribution, label: 'Jobseeker\'s Allowance (Contribution-based)' %>
     <%= f.input :income_support, label: 'Income Support' %>
@@ -35,29 +38,33 @@
     <%= f.input :other_including_universal_credit, label: 'Other (including Universal Credit)' %>
     <%= f.input :other_benefits, label: 'Other benefits' %>
   </p>
-<p>
+
   <H2>Pensions</H2>
+<p>
     <%= f.input :state_pensions, label: 'State pension(s)' %>
     <%= f.input :private_workpensions, label: 'Private or work pension(s)' %>
     <%= f.input :pension_credit, label: 'Pension Credit' %>
     <%= f.input :other_pension, label: 'Other' %>
   </p>
-<p>
+
 <h1>Assets and Equity</h1>
   <H2>House or Flat</H2>
+<p>
     <%= f.input :total_value_propertyies, label: 'Monthly Total Income' %>
     <%= f.input :mortgage_outstanding, label: 'Mortgage outstanding' %>
     <%= f.input :secured_loans_outstanding, label: 'Secured loan(s) outstanding' %>
 </p>
+
+  <H2>Other Assets</H2>  
 <p>
-  <H2>Other Assets</H2>    
     <%= f.input :value_vehicles_less_hpoutstanding, label: 'Value of vehicle(s) (less HP outstanding)' %>
     <%= f.input :savings, label: 'Savings' %>
     <%= f.input :otherassets, label: 'Other assets' %>
   </p>
-<p>
+
   <H1>Expenditure</H1>
   <H2>Essential Expenditure</H2>
+<p>
     <%= f.input :rent, label: 'Rent' %>
     <%= f.input :ground_rent_service_charges_factor_fees, label: 'Ground rent, service charges, factor fees ' %>
     <%= f.input :mortgage, label: 'Mortgage' %>
@@ -80,14 +87,16 @@
     <%= f.input :other_essenttial2, label: 'Other' %>
     <%= f.input :other_essential3, label: 'Other' %>
    </p>
-<p>
+
   <H2>Phone</H2>
+<p>
   <%= f.input :home_phone, label: 'Home phone' %>
     <%= f.input :mobile_phone, label: 'Mobile phone' %>
     <%= f.input :other_phone, label: 'Other phone' %>
   </p>
-<p>
+
   <H2>Travel</H2>
+<p>
     <%= f.input :monthly_total_phone, label: 'Monthly Total Phone' %>
     <%= f.input :public_transport_work_school_shopping_etc, label: 'Public transport (work, school, shopping etc)' %>
     <%= f.input :other_transport, label: 'Other (e.g. taxis)' %>
@@ -99,8 +108,9 @@
     <%= f.input :parking_charges_or_tolls, label: 'Parking charges or tolls' %>
     <%= f.input :other_car_costs, label: 'Other car costs' %>
 </p>
-<p>
+
   <H2>House Keeping</H2>
+<p>
     <%= f.input :food_and_milk, label: 'Food and milk' %>
     <%= f.input :cleaning_and_toiletries, label: 'Cleaning and toiletries' %>
     <%= f.input :newspapers_and_magazines, label: 'Newspapers and magazines' %>
@@ -112,8 +122,9 @@
     <%= f.input :pet_food, label: 'Pet food' %>
     <%= f.input :other_housekeeping, label: 'Other housekeeping' %>
 </p>
-<p>
+
   <H2>Other Expenditure</H2>
+<p>
     <%= f.input :health_dentist_glasses_prescriptions_health_ins, label: 'Health (dentist, glasses, prescriptions, health ins)' %>
     <%= f.input :repairs_house_maint_incl_window_cleaning_maint_contracts, label: 'Repairs / house maint (incl window cleaning, maint contracts)' %>
     <%= f.input :hairdressing_haircuts, label: 'Hairdressing / haircuts' %>
@@ -129,6 +140,6 @@
     <%= f.input :other_expenditure2, label: 'Other (e.g. holidays)' %>
 </p>
 
-<%= f.button :submit, "Save and Proceed" %>
+<%= f.button :submit, "Save and Proceed", label_html: { class: 'mybutton' }, class:"mybutton" %>
 <% end %>
-<h3>You will have a chance to review your form before you submit it.  Once you click Save, you can come back and complete the rest of the form at a later date</h3>
+<p>You will have a chance to review your form before you submit it.  Once you click Save, you can come back and complete the rest of the form at a later date</p>
