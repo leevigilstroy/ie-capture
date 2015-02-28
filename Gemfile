@@ -25,6 +25,7 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
+gem 'bcrypt', '3.1.10'
 
 group :test do
   gem 'minitest-reporters', '1.0.5'

@@ -11,13 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150220182624) do
+ActiveRecord::Schema.define(version: 20150228170757) do
 
   create_table "incomes", force: :cascade do |t|
     t.datetime "created_at",                                               null: false
     t.datetime "updated_at",                                               null: false
-    t.string   "first_name"
-    t.string   "last_name"
     t.decimal  "clients_salary_wages"
     t.decimal  "partners_salary_wages"
     t.decimal  "other_income"
@@ -110,6 +108,15 @@ ActiveRecord::Schema.define(version: 20150220182624) do
     t.decimal  "vet_bills_and_pet_insurance"
     t.decimal  "other_expenditure1"
     t.decimal  "other_expenditure2"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "mortgage_reference_num"
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.string   "password_digest"
   end
 
 end
