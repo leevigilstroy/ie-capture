@@ -11,7 +11,7 @@ class UsersController < ApplicationController
     else
       redirect_to(:action => 'new')
     end
-    debugger
+
   end
   
   def index
@@ -43,7 +43,7 @@ class UsersController < ApplicationController
   
   private
   def user_params
-    params.require(:user).permit(:first_name, :last_name, :mortgage_reference_num)
+    params.require(:user).permit(:first_name, :last_name, :mortgage_reference_num,  :password, :password_confirmation)
   end
   
   
