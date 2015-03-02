@@ -1,0 +1,12 @@
+<H2>New Applicant Details:</h2> 
+<%= simple_form_for @user do |f| %>
+
+<p> 
+   <%=f.input :first_name, label: "First Name:" %>
+   <%=f.input :last_name, label: "Last Name:" %>
+   <%=f.input :mortgage_reference_num, label: "Mortgage Reference #" %>
+</p>
+<%=f.button  :submit, label: "Create" %>
+
+<% end %>
+  
