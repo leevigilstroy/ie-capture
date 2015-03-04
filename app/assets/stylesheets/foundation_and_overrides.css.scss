@@ -727,9 +727,9 @@ $body-bg: #e8e8e8;
 // $input-error-message-font-size: rem-calc(12);
 // $input-error-message-font-weight: $font-weight-normal;
 // $input-error-message-font-style: italic;
-// $input-error-message-font-color: $white;
+ $input-error-message-font-color: #333333;
  //$input-error-message-bg-color: $alert-color;
-// $input-error-message-font-color-alt: $oil;
+ $input-error-message-font-color-alt: #333333;
 
 // We use this to style the glowing effect of inputs when focused
 // $input-include-glowing-effect: true;

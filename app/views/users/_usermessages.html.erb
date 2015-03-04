@@ -1,12 +1,8 @@
 
 <% if @user.errors.any? %>
 
-Ooppps, did you miss something?
-  <ul>
-    <% @user.errors.full_messages.each do |msg| %>
-    <li><%=msg%></li>
-    <%end%>
-  </ul>
+The form contains <%= pluralize(@user.errors.count, "error") %>
+
 <%end%>
 
 

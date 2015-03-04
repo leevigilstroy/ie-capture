@@ -18,7 +18,7 @@ class IncomesControllerTest < ActionController::TestCase
 
   test "should create income" do
     assert_difference('Income.count') do
-      post :create, income: {  }
+      post :create, income: {clients_salary_wages: 59}
     end
 
     assert_redirected_to income_path(assigns(:income))
@@ -35,7 +35,7 @@ class IncomesControllerTest < ActionController::TestCase
   end
 
   test "should update income" do
-    patch :update, id: @income, income: {  }
+    patch :update, id: @income.id, income: {clients_salary_wages: 59}
     assert_redirected_to income_path(assigns(:income))
   end
 
