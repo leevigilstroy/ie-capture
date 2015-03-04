@@ -1,5 +1,13 @@
 class UsersController < ApplicationController
   
+  def index
+    @users = Users.all
+  end
+  
+  def show
+    @user = User.find(params[:id])
+  end
+  
   def new
     @user = User.new
   end
@@ -9,18 +17,12 @@ class UsersController < ApplicationController
     if @user.save
       redirect_to(:action => 'show', :id => @user.id)
     else
-      redirect_to(:action => 'new')
+      render 'new'
     end
 
   end
   
-  def index
-    @users = Users.all
-  end
-  
-  def show
-    @user = User.find(params[:id])
-  end
+
   
   def edit
     @user = User.find(params[:id])

@@ -1,5 +1,5 @@
 <% provide(:title, "All data") %>
-<div class="innerpage">
+<div>
   <p id="notice"><%= notice %></p>
 
   <h1>Listing Incomes</h1>
@@ -12,9 +12,9 @@
     </thead>
 
     <tbody>
-      <%#@incomes.each do |income| %>
+      <%@incomes.each do |income| %>
         <tr>
-          <td><%#=user.first_name%></td>
+          <td><%=income.id%></td>
           <td><%#=user.last_name %></td>
           <td><%= link_to 'Show', income_path(income) %></td>
           <td><%= link_to 'Edit', edit_income_path(income) %></td>

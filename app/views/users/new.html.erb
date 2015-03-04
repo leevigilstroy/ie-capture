@@ -1,8 +1,11 @@
 <% provide(:title, "New User") %>
-<div class="innerpage">
-  <h1>Administration: Income & Expentidure Portal</h1>
+<div>
+<h1>Administration: Income & Expentidure Portal</h1>
+<h3>New user details:</h3>
   
-  <%= render 'userform' %>
+<%= render 'usermessages' %>
 
-  <%= link_to 'Back', :back %>
+<%= render 'userform' %>
+
+<%= link_to 'Back', :back %>
 </div>

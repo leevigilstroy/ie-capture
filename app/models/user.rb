@@ -5,5 +5,5 @@ class User < ActiveRecord::Base
   validates :mortgage_reference_num, presence: true, uniqueness: {case_sensitive: false}
   
   has_secure_password
-  validates  :password, length: {minimum: 6}
+  validates  :password, presence: true, length: {minimum: 6}
 end
