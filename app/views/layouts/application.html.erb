@@ -18,7 +18,14 @@
     </header>
     <main role="main">
      <div class="innerpage">
-      <%= render 'layouts/messages' %>
+       <%= render 'layouts/messages' %>
+       <div class="container">
+
+          <% flash.each do |message_type, message| %>
+           <div class="alert alert-<%= message_type %>"><%= message %></div>
+           <% end %>
+       </div>
+    
        <%= yield %>
 
       </div>

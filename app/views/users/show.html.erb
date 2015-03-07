@@ -1,8 +1,9 @@
 <% provide(:title, "Users") %>
-<div class="innerpage">
-  <h3>Users</h3>
+
+  <h3>User:</h3>
 <p>
-  <%= @user.first_name %><%= @user.last_name %><%= @user.mortgage_reference_num %>
+  <strong>Name</strong>: <%= @user.first_name %> <%= @user.last_name %> </br>
+<strong>Mortage Reference Number:</strong> <%= @user.mortgage_reference_num %>
 </p>
-</div>
+
 
