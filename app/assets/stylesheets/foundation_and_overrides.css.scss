@@ -492,15 +492,15 @@ $body-bg: #e8e8e8;
 // $button-margin-bottom: rem-calc(20);
 
 // We use these to control button text styles.
-// $button-font-family: $body-font-family;
-// $button-font-color: $white;
-// $button-font-color-alt: $oil;
+
+ $button-font-color: #333333;
+
 // $button-font-tny: rem-calc(11);
 // $button-font-sml: rem-calc(13);
 // $button-font-med: rem-calc(16);
 // $button-font-lrg: rem-calc(20);
 // $button-font-weight: $font-weight-normal;
-// $button-font-align: center;
+ $button-font-align: center;
 
 // We use these to control various hover effects.
 // $button-function-factor: -20%;
