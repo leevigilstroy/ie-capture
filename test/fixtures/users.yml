@@ -3,9 +3,9 @@
 one:
   first_name: MyString
   last_name: MyString
-  mortgage_reference_num: MyString
+  mortgage_reference_num: mortgage1
 
 two:
   first_name: MyString
   last_name: MyString
-  mortgage_reference_num: MyString
+  mortgage_reference_num: mortgage2
