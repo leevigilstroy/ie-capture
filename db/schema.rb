@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150228170757) do
+ActiveRecord::Schema.define(version: 20150311204342) do
 
   create_table "incomes", force: :cascade do |t|
     t.datetime "created_at",                                               null: false
@@ -114,9 +114,12 @@ ActiveRecord::Schema.define(version: 20150228170757) do
     t.string   "first_name"
     t.string   "last_name"
     t.string   "mortgage_reference_num"
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.datetime "created_at",                             null: false
+    t.datetime "updated_at",                             null: false
     t.string   "password_digest"
+    t.boolean  "admin",                  default: false
   end
+
+  add_index "users", ["mortgage_reference_num"], name: "index_users_on_mortgage_reference_num", unique: true
 
 end
