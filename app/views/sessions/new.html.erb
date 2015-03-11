@@ -1,12 +1,19 @@
 <%provide(:title, "Log In") %>
 
-<h3>Please enter your log-in details.</h3>
 
-<div><p>
-  <%= simple_form_for :sessions, url: login_path do |f| %>
-   <%=f.input :mortgage_reference_num, label: "Mortgage Reference #" %>
-   <%=f.input  :password, label: "Password"  %>   
-   <%=f.submit "Log in", class: "mybutton" %>
-  <% end %>
-</p></div>
+<% if logged_in? %>
+    <h3>You are already logged in</h3>
+<%else%>
 
+
+    <h3>Please enter your log-in details.</h3>
+
+    <div><p>
+      <%= simple_form_for :sessions, url: login_path do |f| %>
+       <%=f.input :mortgage_reference_num, label: "Mortgage Reference #" %>
+       <%=f.input  :password, label: "Password"  %>   
+       <%=f.submit "Log in", class: "mybutton" %>
+      <% end %>
+    </p></div>
+
+<%end%>
