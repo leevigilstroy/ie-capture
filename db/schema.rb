@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150311204342) do
+ActiveRecord::Schema.define(version: 20150313190151) do
 
   create_table "incomes", force: :cascade do |t|
     t.datetime "created_at",                                               null: false
@@ -108,7 +108,10 @@ ActiveRecord::Schema.define(version: 20150311204342) do
     t.decimal  "vet_bills_and_pet_insurance"
     t.decimal  "other_expenditure1"
     t.decimal  "other_expenditure2"
+    t.integer  "user_id"
   end
+
+  add_index "incomes", ["user_id"], name: "index_incomes_on_user_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "first_name"

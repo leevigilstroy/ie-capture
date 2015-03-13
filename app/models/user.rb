@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  has_one :income  
   before_save  {self.mortgage_reference_num = mortgage_reference_num.upcase}  
   validates :first_name, presence: true
   validates :last_name, presence: true
@@ -14,4 +15,8 @@ class User < ActiveRecord::Base
                                                   BCrypt::Engine.cost
     BCrypt::Password.create(string, cost: cost)
   end
+  
+
+
+  
 end

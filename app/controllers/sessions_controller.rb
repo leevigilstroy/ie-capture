@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
 
     if user && user.authenticate(params[:sessions][:password])
       log_in user
-      redirect_to user
+      redirect_to '/incomes/new'
     else
       flash.now[:danger] = 'Invalid Mortgage Reference # or Password combination'
       render 'new'
