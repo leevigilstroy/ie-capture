@@ -1,8 +1,9 @@
 require 'test_helper'
 
 class IncomesControllerTest < ActionController::TestCase
-  setup do
-    @income = incomes(:one)
+ 
+  def setup
+    @income = incomes(:firstincome)
   end
 
   test "should get index" do
@@ -18,7 +19,7 @@ class IncomesControllerTest < ActionController::TestCase
 
   test "should create income" do
     assert_difference('Income.count') do
-      post :create, income: {clients_salary_wages: 59}
+      post :create, income: {clients_salary_wages: 59.00, partners_salary_wages: 708.00, other_income: 2088.00, user_id: 1}
     end
 
     assert_redirected_to income_path(assigns(:income))
@@ -35,7 +36,7 @@ class IncomesControllerTest < ActionController::TestCase
   end
 
   test "should update income" do
-    patch :update, id: @income.id, income: {clients_salary_wages: 59}
+    patch :update, id: @income.id, income: {clients_salary_wages: 59.00, partners_salary_wages: 708.00, other_income: 2088.00, user_id: 1}
     assert_redirected_to income_path(assigns(:income))
   end
 

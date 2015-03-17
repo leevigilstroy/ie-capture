@@ -12,16 +12,16 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
   end
   
   def setup
-    @user = users(:michael)
+    @user = users(:oliver)
   end
   
   test "login with valid details" do
     get login_path
     assert_template 'sessions/new'
     post login_path, sessions: {mortgage_reference_num: @user.mortgage_reference_num, password: 'password'}
-    assert_redirected_to @user
+    assert_redirected_to new_income_path
     follow_redirect!
-    assert_template 'users/show'
+    assert_template 'incomes/new'
     
   end
   

@@ -1,7 +1,8 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
- clients_salary_wages:  59
- partners_salary_wages: 708
- other_income: 2088
+firstincome:
+  clients_salary_wages: 59.00
+  partners_salary_wages: 708.00
+  other_income: 2088.00
+
   

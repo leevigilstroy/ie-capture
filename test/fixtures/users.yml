@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-michael:
-  first_name: Michael
-  last_name: Hartl
-  mortgage_reference_num: 9467295673322
+oliver:
+  first_name: Oliver
+  last_name: Stigley
+  mortgage_reference_num: 0123456789
   password_digest: <%= User.digest('password') %>
 
 

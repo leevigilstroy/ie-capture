@@ -1,0 +1,161 @@
+[33mcommit dd4832f2fac2db8ddecf00b8c654c100d95a836a[m
+Author: leevigilstroy <oliverstigley@gmail.com>
+Date:   Fri Mar 13 20:55:52 2015 +0000
+
+    database associations complete
+
+[33mcommit ae4655885db900588944e1d01052bfbe16d35010[m
+Author: leevigilstroy <oliverstigley@gmail.com>
+Date:   Wed Mar 11 21:01:12 2015 +0000
+
+    added admin boolean
+
+[33mcommit eaedf0da1b016c70e4add80ba8ca647bd5a69180[m
+Author: leevigilstroy <oliverstigley@gmail.com>
+Date:   Wed Mar 11 20:28:23 2015 +0000
+
+    Login and logout working
+
+[33mcommit 084cbf5c2d04bd2967e214fa2dda6b0f117e9da8[m
+Author: leevigilstroy <oliverstigley@gmail.com>
+Date:   Tue Mar 10 20:08:07 2015 +0000
+
+    Login working with extra sessionhelpers
+
+[33mcommit 272c5518d78179625be5b059f5d00cb810117bf4[m
+Author: leevigilstroy <oliverstigley@gmail.com>
+Date:   Tue Mar 10 19:11:11 2015 +0000
+
+    Log-in page working successfully
+
+[33mcommit 43c3d19a356796f27aa43e9deaef3da7c125823f[m
+Author: leevigilstroy <oliverstigley@gmail.com>
+Date:   Mon Mar 9 18:07:44 2015 +0000
+
+    tests now passing
+
+[33mcommit 4eedfe8820beda93c50675ffea40208926404dca[m
+Author: leevigilstroy <oliverstigley@gmail.com>
+Date:   Sat Mar 7 13:19:33 2015 +0000
+
+    Updated styling on user show
+
+[33mcommit 9a55d5bca8597208c951722cbd965579bece586b[m
+Author: leevigilstroy <oliverstigley@gmail.com>
+Date:   Sat Mar 7 12:49:18 2015 +0000
+
+    Added integration tests for user sign up
+
+[33mcommit 565ee2c2b1493421ae35889cbbb6d064b1c26e33[m
+Author: leevigilstroy <oliverstigley@gmail.com>
+Date:   Wed Mar 4 20:29:21 2015 +0000
+
+    income controller and static page tests passing.
+
+[33mcommit ff0d69f0749cabeeec590fe92cd985249797f085[m
+Author: leevigilstroy <oliverstigley@gmail.com>
+Date:   Wed Mar 4 17:38:03 2015 +0000
+
+    Error messages on sign up form completed
+
+[33mcommit beb3be5bca2233e4246e1d7830982b9dee772dd6[m
+Author: leevigilstroy <oliverstigley@gmail.com>
+Date:   Mon Mar 2 20:15:48 2015 +0000
+
+    new, create and show users working
+
+[33mcommit c08c64864280439aa67750a0ac86104e49fba97f[m
+Author: leevigilstroy <oliverstigley@gmail.com>
+Date:   Mon Mar 2 19:33:59 2015 +0000
+
+    Basic User Controller Added
+
+[33mcommit 92709ad57b8a8d76583d4aab3777c690c5534b90[m
+Author: leevigilstroy <oliverstigley@gmail.com>
+Date:   Sat Feb 28 17:54:05 2015 +0000
+
+    add user model with some validations. C6 complete
+
+[33mcommit 55d58ddbb6c7f11a770216551776106a2284b93e[m
+Author: leevigilstroy <oliverstigley@gmail.com>
+Date:   Fri Feb 27 19:48:26 2015 +0000
+
+    Styling round 1
+
+[33mcommit e5d8c2ad1c77792a3bc5063202ef727d1cca2214[m
+Author: leevigilstroy <oliverstigley@gmail.com>
+Date:   Sun Feb 22 17:45:08 2015 +0000
+
+    cleaned up incomeform partials
+
+[33mcommit e1948ec7c707f2858cb33215ba4d8983264b4aba[m
+Author: leevigilstroy <oliverstigley@gmail.com>
+Date:   Sun Feb 22 17:34:23 2015 +0000
+
+    Added methods: destroy, update, edit
+
+[33mcommit c83ff8949a943aa8015da32c74c52db6387360c5[m
+Author: leevigilstroy <oliverstigley@gmail.com>
+Date:   Sun Feb 22 16:25:26 2015 +0000
+
+    Update gem file with foundation and test helpers.  Test files udpated
+
+[33mcommit 39a629e282548aef20140e5e1de25fed85157629[m
+Author: leevigilstroy <oliverstigley@gmail.com>
+Date:   Sun Feb 22 15:10:55 2015 +0000
+
+    Added home,static about and help pages
+
+[33mcommit e1ddcc8ef7f6474979f0cc49aa18375cd3e83830[m
+Author: leevigilstroy <oliverstigley@gmail.com>
+Date:   Fri Feb 20 19:47:35 2015 +0000
+
+    updated strong params and data is saving
+
+[33mcommit 9329546359a43968b966649d54e2f9eaf6cb3a6c[m
+Author: leevigilstroy <oliverstigley@gmail.com>
+Date:   Fri Feb 20 19:33:26 2015 +0000
+
+    Full Form text loaded, table entered in to income db
+
+[33mcommit e4920fb67c70305b2f4bede7ac6feb5477e78037[m
+Author: leevigilstroy <oliverstigley@gmail.com>
+Date:   Thu Feb 19 18:30:03 2015 +0000
+
+    create methods added
+
+[33mcommit e11747ad7f8122c42c8964b138f2786e55a5a370[m
+Author: leevigilstroy <oliverstigley@gmail.com>
+Date:   Wed Feb 18 21:03:29 2015 +0000
+
+    index and show methods
+
+[33mcommit 57e63b4125c159dae0be88aec230d65642a99988[m
+Author: leevigilstroy <oliverstigley@gmail.com>
+Date:   Tue Feb 17 19:55:43 2015 +0000
+
+    Sample form completed referencing database attribes
+
+[33mcommit 2d5b7d80a7b892eef64e1c013bb47070bd2d83b1[m
+Author: leevigilstroy <oliverstigley@gmail.com>
+Date:   Tue Feb 17 18:30:40 2015 +0000
+
+    deleted table from migration to remove error, webserver working
+
+[33mcommit c63f5a86388126e6a17a3b01335e1e05af6b9071[m
+Author: leevigilstroy <oliverstigley@gmail.com>
+Date:   Tue Feb 17 17:46:11 2015 +0000
+
+    scaffold command: income
+
+[33mcommit 74a72a2649264f5489d11c46d4ea0f88ec6277bd[m
+Author: leevigilstroy <oliverstigley@gmail.com>
+Date:   Fri Feb 13 17:28:11 2015 +0000
+
+    rails_apps_composer: Gemfile
+
+[33mcommit 882679efdda522b00cdaaa5267c8c6fa9b7c5728[m
+Author: leevigilstroy <oliverstigley@gmail.com>
+Date:   Fri Feb 13 17:25:33 2015 +0000
+
+    rails_apps_composer: initial commit
