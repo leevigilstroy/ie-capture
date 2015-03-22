@@ -1,5 +1,5 @@
 require 'test_helper'
-
+#This is placed in /integration because of the link between the sessions controller and the users controller.
 class UsersLoginTest < ActionDispatch::IntegrationTest
 
   test "login with invalid details" do
@@ -19,9 +19,10 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
     get login_path
     assert_template 'sessions/new'
     post login_path, sessions: {mortgage_reference_num: @user.mortgage_reference_num, password: 'password'}
-    assert_redirected_to new_income_path
+    assert_response :redirect
     follow_redirect!
-    assert_template 'incomes/new'
+    assert_template 'incomes/show'
+    assert_not_nil assigns(:income)
     
   end
   

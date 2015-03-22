@@ -1,9 +1,26 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
+admin:
+  first_name: Admin
+  last_name: Isrator
+  mortgage_reference_num: 111111111
+  password_digest: <%= User.digest('password') %>
+  admin: True
+  id: 1
+
 oliver:
   first_name: Oliver
   last_name: Stigley
   mortgage_reference_num: 0123456789
   password_digest: <%= User.digest('password') %>
-
+  admin: false
+  id: 2
+  
+anotheruser:
+  first_name: another
+  last_name: guyfromtown
+  mortgage_reference_num: 211111111
+  password_digest: <%= User.digest('password') %>
+  admin: false
+  id: 3
 

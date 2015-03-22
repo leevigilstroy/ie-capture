@@ -1,11 +1,13 @@
 class IncomesController < ApplicationController 
-
+before_action :admin_user?, only: [:index, :delete, :destroy]
+after_action :myincome?, only: [:edit, :update, :show] 
+  
   def index
     @incomes = Income.all
   end
   
-    def show
-    @income = Income.find(params[:id])
+   def show
+      @income = Income.find(params[:id])
   end
   
   def new
@@ -32,11 +34,16 @@ class IncomesController < ApplicationController
     end
   end
   
+  def delete
+    @income = Income.find(params[:id])
+  end
+  
   def destroy
     @income = Income.find(params[:id])
     @income.destroy
     redirect_to(:action => 'index')
   end
+  
   private
   
   def income_params

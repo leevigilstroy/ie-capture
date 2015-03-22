@@ -1,4 +1,7 @@
 class UsersController < ApplicationController
+
+  before_action :admin_user?, only: [:index, :new, :create, :delete, :destroy]
+  
   
   def index
     @users = Users.all
@@ -15,6 +18,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+      @income = @user.create_income(user_id: @user.id)
       flash[:success] = "New User Created"
       redirect_to(:action => 'show', :id => @user.id)
 
@@ -23,21 +27,7 @@ class UsersController < ApplicationController
     end
 
   end
-  
 
-  
-  def edit
-    @user = User.find(params[:id])
-  end
-  
-  def update    
-    @user = User.find(params[:id])
-    if @user.update_attributes(user_params)
-        redirect_to(:action => 'show', :id => @user.id)
-       else
-      redirect_to(:action => 'edit')
-       end
-  end
   
   def delete
   end
