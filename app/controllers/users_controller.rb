@@ -17,7 +17,7 @@ class UsersController < ApplicationController
   
   def create
     @user = User.new(user_params)
-    if @user.save
+    if @user.save && !@user.admin?
       @income = @user.create_income(user_id: @user.id)
       flash[:success] = "New User Created"
       redirect_to(:action => 'show', :id => @user.id)

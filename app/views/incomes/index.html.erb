@@ -1,8 +1,9 @@
 <% provide(:title, "All data") %>
 <div>
   <p id="notice"><%= notice %></p>
-
-  <h1>Listing Incomes</h1>
+<%= link_to 'Add New User', new_user_path, class: "button radius"%> 
+  
+  <h1>Listing Users</h1>
 
   <table>
     <thead>
@@ -14,8 +15,13 @@
     <tbody>
       <%@incomes.each do |income| %>
         <tr>
-          <td><%=income.id%></td>
-          <td><%#=user.last_name %></td>
+          <td><%unless User.find_by(id: income.user_id).admin?%>
+                <%=income.id%>
+            <%else%>
+            Admin
+            <%end%></td>
+          <td><%=User.find_by(id: income.user_id).first_name %></td>
+          <td><%=User.find_by(id: income.user_id).last_name %></td>
           <td><%= link_to 'Show', income_path(income) %></td>
           <td><%= link_to 'Edit', edit_income_path(income) %></td>
           <td><%= link_to 'Delete', income_path(income), method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -26,5 +32,5 @@
 
   <br>
 
-  <%= link_to 'New Income', new_income_path %>
+
 </div>

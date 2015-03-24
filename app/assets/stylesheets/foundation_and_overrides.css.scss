@@ -5,142 +5,13 @@ $include-html-classes: true;
 // $include-print-styles: true;
 $include-html-global-classes: $include-html-classes;
 
-
-
-
-body {
-    background-color: #e8e8e8;
-    font-family: Arial;
-}
-
-.innerpage	{
-     padding: 0 30px 0 40px;
-     background: white;
-	   margin:0 auto 0 auto;
-  	 width:	 980px;
-     height: auto;
-
-	 }
-
-.topwrapper  {
-	 width:	 980px;   
-  margin:0 auto;
-}
-
-#snowwhite  {
-  background: url("bg_header_white_shadow.gif") center bottom no-repeat;
-  margin:0 auto;
-  width:	 980px; 
-  height: 83px;
-
-}
-
-#greyrow  {
-    width:	 980px; 
-    height: 32px;
-    margin:0 auto;
-    z-index:10;
-    position:relative;
-    background:#626469 url("http://54.208.29.211/totem/homologacao/hsbc-advance/1/PA_esf-ca-app-content/content/themes/images/hbbr_pws_gip16/layout/bg_header_dark_grey.gif") center bottom repeat-x;
-}
-
-#logo  {
-  padding:20px 40px 18px 40px;
-  float:left;
-}
-
-.linkblock {
-  padding:20px;
-}
-
-#navlink  {
-  display: inline;
-  link-style: none;
-  font-family: Arial;
-  
-    
-}
-
-li a  {
-  color: #333333;
-  line-height:24px;
-  font-family: Arial;
-  font-weight: bold;
-  text-decoration: none;
-  background:url("http://54.208.29.211/totem/homologacao/hsbc-advance/1/PA_esf-ca-app-content/content/themes/images/hbbr_pws_gip16/layout/section_divider.gif") left center no-repeat;
-  padding:20px 30px 17px;
-  display: inline;
-}
-
-h1  {
-  font-family: arial;
-  font-size: 25px;
-  font-weight: bold;
-  color: black;
-  padding: 25px 5px 0px 5px;
-   background:url("http://54.208.29.211/totem/homologacao/hsbc-advance/1/PA_esf-ca-app-content/content/themes/images/hbbr_pws_gip16/content/border_grey.gif")  center bottom no-repeat;
-}
-
-h2  {
-   color: #333333;
-  font-family: arial;
-  font-weight: bold;
-  font-size: 25px;
-  padding: 30px 10px 0px 10px;
-}
-
-p  {
-   color: #333333;
-  font-family: arial;
-  font-size: 20px;
-  padding: 1px 12px 5px 12px;
-  line-height: 20pt;
-}
-
-.mybutton  {
-  background-image: url("button.gif"); 
-  height: 40px;
-  width: 170px;  
-  text-align: center;
-  color: #333333;
-  font-family: Arial;
-  font-weight: bold;
-  text-decoration: none;
-  vertical-align: middle;
-      padding: 10px;
-
-}
-
-a  {
-  color: #333333;
-  font-family: Arial;
-  font-weight: bold;
-  text-decoration: none;
-  vertical-align: middle;
-  padding: 10px;
-  text-decoration: underline;
-}
-
-label  {
-  color: #333333;
-  font-family: arial;
-  font-size: 20px;
-  padding: 10px 12px 5px 0px;
-  line-height: 20pt;
-  display: block;
-}
-
-
-
-
-
 // Stuff from Foundationbb. Grid
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // $include-html-grid-classes: $include-html-classes;
 // $include-xl-html-grid-classes: false;
 
-// $row-width: rem-calc(1000);
+ $row-width: rem-calc(1000);
 // $total-columns: 12;
 // $column-gutter: rem-calc(30);
 
@@ -153,12 +24,14 @@ label  {
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
-// $font-weight-normal: normal !default;
-// $font-weight-bold: bold !default;
+ $font-weight-normal: normal !default;
+ $font-weight-bold: bold !default;
 
-// $white       : #FFFFFF;
+ $white       : #FFFFFF;
+
+
 // $ghost       : #FAFAFA;
-// $snow        : #F9F9F9;
+ $snow        : #F9F9F9;
 // $vapor       : #F6F6F6;
 // $white-smoke : #F5F5F5;
 // $silver      : #EFEFEF;
@@ -172,7 +45,7 @@ label  {
 // $steel       : #666666;
 // $charcoal    : #555555;
 // $tuatara     : #444444;
-// $oil         : #333333;
+ $oil         : #333333;
 // $jet         : #222222;
 // $black       : #000000;
 
@@ -493,7 +366,7 @@ $body-bg: #e8e8e8;
 
 // We use these to control button text styles.
 
- $button-font-color: #333333;
+ $button-font-color: $white;
 
 // $button-font-tny: rem-calc(11);
 // $button-font-sml: rem-calc(13);
@@ -1425,16 +1298,17 @@ $body-bg: #e8e8e8;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: $oil;
+ //$topbar-bg-color: $oil;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
-// $topbar-height: rem-calc(45);
-// $topbar-margin-bottom: 0;
+ $topbar-height: rem-calc(60);
+ $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
-// $topbar-title-weight: $font-weight-normal;
-// $topbar-title-font-size: rem-calc(17);
+ $topbar-title-weight: $font-weight-bold;
+$topbar-title-color: $white;
+ $topbar-title-font-size: rem-calc(25);
 
 // Style the top bar dropdown elements
 // $topbar-dropdown-bg: $oil;
@@ -1504,6 +1378,27 @@ $body-bg: #e8e8e8;
 // $include-table-visibility-classes: true;
 // $include-legacy-visibility-classes: true;
 // $include-accessibility-classes: true;
+
+#mytitle  {  
+color: #FFFFFF;
+}
+
+.footer{
+  
+  height: 100%;
+  background-color: #333333;
+  color: #F9F9F9;
+  font-weight: $font-weight-normal;
+  p  {
+      font-size: rem-calc(10);
+  }
+    }
+
+
+#innerpage  {
+  background-color: #FFFFFF;
+  height: 100%;
+}
 
 @import 'foundation';
 
